@@ -1,0 +1,15 @@
+{
+  "name": "serventec/i-educar-govbr-login-package",
+  "description": "Login via gov.br (Login Único) para i-Educar",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "iEducar\\Packages\\GovBrLogin\\": "src/"
+    }
+  }
+}
+
