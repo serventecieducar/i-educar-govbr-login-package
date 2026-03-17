@@ -1,4 +1,30 @@
 {
+    "name": "serventec/i-educar-govbr-login-package",
+    "description": "Login no i-Educar usando gov.br (OpenID Connect), com configuração via interface e botão na tela de login.",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "iEducar\\Packages\\GovbrLogin\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iEducar\\Packages\\GovbrLogin\\Providers\\GovbrLoginServiceProvider"
+            ]
+        },
+        "ieducar": {
+            "compatible": ["2.10", "2.11"]
+        }
+    }
+}
+
+{
   "name": "serventec/i-educar-govbr-login-package",
   "description": "Login via gov.br (Login Único) para i-Educar",
   "type": "library",
